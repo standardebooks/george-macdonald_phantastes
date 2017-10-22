@@ -30,7 +30,23 @@
 		<meta property="meta-auth" refines="#long-description">https://standardebooks.org</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/325</dc:source>
-		<meta property="se:production-notes">Any special notes about the production of this ebook for future editors/producers? Remove this element if not.</meta>
+		<meta property="se:production-notes"><![CDATA[
+			Chapter 19 uses palm-mark.svg in an inline image element. Here is one way to create palm-mark.svg:
+
+			1. Visit https://books.google.com/books?id=h30lAAAAMAAJ, click the menu button (looks like a gear), and choose Download PDF.
+
+			2. Use ImageMagick convert <https://www.imagemagick.org/script/convert.php> to extract a bitmap image from the PDF file:
+
+			    ```
+			    convert -crop '62x50+385+630' -density 150 Phantastes.pdf[245] palm-mark.bmp
+			    ```
+
+			3. Use Potrace <http://potrace.sourceforge.net> to convert the bitmap to an SVG file:
+
+			    ```
+			    potrace --svg --output palm-mark.svg --tight palm-mark.bmp
+			    ```
+		]]></meta>
 		<meta property="se:word-count">WORDCOUNT</meta>
 		<meta property="se:reading-ease.flesch">READINGEASE</meta>
 		<meta property="se:url.encyclopedia.wikipedia">EBOOKWIKILINK</meta>
