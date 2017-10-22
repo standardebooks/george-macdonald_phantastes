@@ -31,6 +31,16 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/325</dc:source>
 		<meta property="se:production-notes"><![CDATA[
+			The cover uses the painting “On the Dee near Woodend, Aberdeenshire” by Joseph Farquharson. The image of this painting is from https://www.wikiart.org/en/joseph-farquharson/on-the-dee-near-woodend-aberdeenshire-1867. A reproduction of this painting appears on page 439 of The Lady’s Realm, Volume 12, printed in 1902 <https://books.google.com/books?id=SG8-AAAAYAAJ>. To create the actual cover.jpg file used for the cover:
+
+			1. Download https://uploads4.wikiart.org/images/joseph-farquharson/on-the-dee-near-woodend-aberdeenshire-1867.jpg as images/cover.source.jpg.
+
+			2. Use ImageMagick convert <https://www.imagemagick.org/script/convert.php> to scale and sharpen the image:
+
+			    ```
+			    convert cover.source.jpg -resize 'x2100' -crop '1400x2100+200+0' -blur '0x3' -sharpen '0x5' cover.jpg
+			    ```
+
 			Chapter 19 uses palm-mark.svg in an inline image element. Here is one way to create palm-mark.svg:
 
 			1. Visit https://books.google.com/books?id=h30lAAAAMAAJ, click the menu button (looks like a gear), and choose Download PDF.
