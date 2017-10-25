@@ -34,8 +34,10 @@ section[epub|type~="halftitlepage"] span[epub|type~="subtitle"]{
 	text-indent: 0;
 }
 
-[epub|type~="z3998:poem"] > p.number{
+[epub|type~="z3998:poem"] header p{
+	font-variant: small-caps;
 	text-align: center;
+	margin-bottom: 1em;
 }
 
 p span.i1{
