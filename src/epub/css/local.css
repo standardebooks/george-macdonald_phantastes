@@ -50,14 +50,6 @@ p span.i2{
 	padding-left: 3em;
 }
 
-[epub|type~="z3998:drama"] p{
-	text-indent: 1em;
-}
-
-[epub|type~="z3998:drama"] p > span[epub|type~="z3998:persona"]{
-	font-style: italic;
-}
-
 .inscription p{
 	font-variant: small-caps;
 	text-align: center;
