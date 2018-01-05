@@ -29,28 +29,18 @@
 		<dc:subject id="subject-1">Fantasy fiction</dc:subject>
 		<meta property="meta-auth" refines="#subject-1">https://www.gutenberg.org/ebooks/325</meta>
 		<meta property="se:subject">Fantasy</meta>
-		<dc:description id="description">A young man awakes in Fairy Land, where he takes part in a series of adventures.</dc:description>
+		<dc:description id="description">A young man awakes in Fairy Land, where he takes part in a series of strange adventures.</dc:description>
 		<meta property="meta-auth" refines="#description">https://standardebooks.org</meta>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;Anodos, after awaking in Fairy Land, recounts a series of adventures as he searches for the motile statue of a woman with which he has become infatuated.&lt;/p&gt;
-			&lt;p&gt;&lt;i&gt;Phantastes&lt;/i&gt; was first published in 1858.&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;Phantastes&lt;/i&gt; was published in 1858. It tells the story of Anodos, who, on coming of age, is examining the effects of his deceased father. To his astonishment, in doing so he sees an apparition of a fairy woman, who tells him that he has some fairy blood and conveys him to Fairy Land.&lt;/p&gt;
+			&lt;p&gt;In Fairy Land Anodos undergoes a long series of strange adventures and spiritual experiences. He is frequently under threat, at first from malevolent trees, and later from his own evil Shadow. At one point he discovers Pygmalion’s cave and sees the form of a beautiful woman enclosed in transparent alabaster. He falls instantly in love with this woman and contrives to free her from the stone, but she flees from him. Later, he encounters the Arthurian knight Sir Percivale, who has just come off the worst of an encounter with the evil Maid of the Ash Tree. Eventually, after many trials and hazards, Anodos encounters Sir Percivale again and becomes his squire. Together they carry out deeds of chivalry before Anodos eventually returns to the mundane world.&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;Phantastes&lt;/i&gt; is now regarded as a classic of the fantasy genre and has been an important influence on later generations of fantasy writers, including such names as C. S. Lewis.&lt;/p&gt;
 		</meta>
-		<meta property="meta-auth" refines="#long-description">https://standardebooks.org</meta>
 		<dc:language>en-US</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/325</dc:source>
 		<dc:source>https://catalog.hathitrust.org/Record/007665278</dc:source>
 		<dc:source>https://archive.org/details/phantastesfaerie00macd_0</dc:source>
 		<meta property="se:production-notes">
-			The cover uses the painting “On the Dee near Woodend, Aberdeenshire” by Joseph Farquharson. The image of this painting is from https://www.wikiart.org/en/joseph-farquharson/on-the-dee-near-woodend-aberdeenshire-1867. A reproduction of this painting appears on page 439 of The Lady’s Realm, Volume 12, printed in 1902 (https://books.google.com/books?id=SG8-AAAAYAAJ). To create the actual cover.jpg file used for the cover:
-
-			1. Download https://uploads4.wikiart.org/images/joseph-farquharson/on-the-dee-near-woodend-aberdeenshire-1867.jpg as images/cover.source.jpg.
-
-			2. Use ImageMagick convert (https://www.imagemagick.org/script/convert.php) to scale and sharpen the image:
-
-				```
-				convert cover.source.jpg -resize 'x2100' -crop '1400x2100+200+0' -blur '0x3' -sharpen '0x5' cover.jpg
-				```
-
 			Chapter 19 uses palm-mark.svg in an inline image element. Here is one way to create palm-mark.svg:
 
 			1. Visit https://books.google.com/books?id=h30lAAAAMAAJ, click the menu button (looks like a gear), and choose Download PDF.
@@ -67,8 +57,8 @@
 				potrace --svg --output palm-mark.svg --tight palm-mark.bmp
 				```
 		</meta>
-		<meta property="se:word-count">69195</meta>
-		<meta property="se:reading-ease.flesch">74.22</meta>
+		<meta property="se:word-count">WORDCOUNT</meta>
+		<meta property="se:reading-ease.flesch">READINGEASE</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Phantastes</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/george-macdonald_phantastes</meta>
 		<dc:creator id="author">George MacDonald</dc:creator>
@@ -76,10 +66,10 @@
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/George_MacDonald</meta>
 		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n78096948</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
-		<dc:contributor id="artist">Joseph Farquharson</dc:contributor>
-		<meta property="file-as" refines="#artist">Farquharson, Joseph</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Joseph_Farquharson</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/nb2007025921</meta>
+		<dc:contributor id="artist">Edmund Blair Leighton</dc:contributor>
+		<meta property="file-as" refines="#artist">Leighton, Edmund Blair</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Edmund_Leighton</meta>
+		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/nr94034866</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">Mike Lough</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">Lough, Mike</meta>
@@ -88,12 +78,20 @@
 		<meta property="file-as" refines="#transcriber-2">Widger, David</meta>
 		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
 		<dc:contributor id="producer-1">An Anonymous Volunteer</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Anonymous Volunteer, An</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">David Grigg</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Grigg, David</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">tyg</meta>
 	</metadata>
 	<manifest>
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
