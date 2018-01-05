@@ -26,6 +26,11 @@ section[epub|type~="chapter"] header{
 	text-indent: 0;
 }
 
+[epub|type~="z3998:song"] header p,
+[epub|type~="z3998:poem"] header p{
+	text-align: center;
+}
+
 [epub|type~="z3998:song"] p > span,
 [epub|type~="z3998:poem"] p > span{
 	display: block;
@@ -67,6 +72,25 @@ p span.i2{
 #palm-mark{
 	height: 1.75em;
 	vertical-align: middle;
+}
+
+table{
+	width: 100%;
+}
+
+td[epub|type~="z3998:persona"]{
+	text-align: right;
+	font-variant: all-small-caps;
+	width: 30%;
+}
+
+td{
+	vertical-align: top;
+	padding: .5em;
+}
+
+td p{
+	text-indent: 0;
 }
 
 [epub|type~="epigraph"] + [epub|type~="epigraph"]::before{
