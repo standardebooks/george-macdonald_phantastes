@@ -80,7 +80,6 @@
 		<dc:contributor id="producer-1">An Anonymous Volunteer</dc:contributor>
 		<meta property="file-as" refines="#producer-1">Anonymous Volunteer, An</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
