@@ -5,39 +5,43 @@ abbr.name{
 	white-space: nowrap;
 }
 
+b{
+	font-weight: normal;
+	font-variant: all-small-caps;
+}
+
 section[epub|type~="halftitlepage"] span[epub|type~="subtitle"]{
 	display: block;
 	font-size: .75em;
 	font-weight: normal;
 }
 
+[epub|type~="z3998:song"] p,
 [epub|type~="z3998:poem"] p{
 	text-align: left;
 	text-indent: 0;
 }
 
+[epub|type~="z3998:song"] p > span,
 [epub|type~="z3998:poem"] p > span{
 	display: block;
 	text-indent: -1em;
 	padding-left: 1em;
 }
 
+[epub|type~="z3998:song"] p > span + br,
 [epub|type~="z3998:poem"] p > span + br{
 	display: none;
 }
 
+[epub|type~="z3998:song"] p + p,
 [epub|type~="z3998:poem"] p + p{
 	margin-top: 1em;
 }
 
+[epub|type~="z3998:song"] + p,
 [epub|type~="z3998:poem"] + p{
 	text-indent: 0;
-}
-
-[epub|type~="z3998:poem"] header p{
-	font-variant: small-caps;
-	text-align: center;
-	margin-bottom: 1em;
 }
 
 p span.i1{
