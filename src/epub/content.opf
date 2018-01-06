@@ -41,21 +41,8 @@
 		<dc:source>https://catalog.hathitrust.org/Record/007665278</dc:source>
 		<dc:source>https://archive.org/details/phantastesfaerie00macd_0</dc:source>
 		<meta property="se:production-notes">
-			Chapter 19 uses palm-mark.svg in an inline image element. Here is one way to create palm-mark.svg:
-
-			1. Visit https://books.google.com/books?id=h30lAAAAMAAJ, click the menu button (looks like a gear), and choose Download PDF.
-
-			2. Use ImageMagick convert (https://www.imagemagick.org/script/convert.php) to extract a bitmap image from the PDF file:
-
-				```
-				convert -crop '62x50+385+630' -density 150 Phantastes.pdf[245] palm-mark.bmp
-				```
-
-			3. Use Potrace (http://potrace.sourceforge.net) to convert the bitmap to an SVG file:
-
-				```
-				potrace --svg --output palm-mark.svg --tight palm-mark.bmp
-				```
+			Chapter 19 uses palm-mark.svg in an inline image element.
+			There are some very peculiar words in this book, which haven’t been sorted out by modernize-spelling. But given the nature of the work it wouldn’t seem right to “modernize” them. For example “adown” - a poetic version of “down”, “clomb” meaning “climbed”, “gripe” for “grip”. And the spelling of Phantasy, which would seem wrong to change as it matches the book title.
 		</meta>
 		<meta property="se:word-count">WORDCOUNT</meta>
 		<meta property="se:reading-ease.flesch">READINGEASE</meta>
