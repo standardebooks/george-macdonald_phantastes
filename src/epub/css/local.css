@@ -93,6 +93,10 @@ td p{
 	text-indent: 0;
 }
 
+section > header{
+	text-align: center;
+}
+
 [epub|type~="epigraph"] + [epub|type~="epigraph"]::before{
 	content: '';
 	display: block;
