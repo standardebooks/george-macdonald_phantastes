@@ -26,8 +26,7 @@ section[epub|type~="chapter"] header{
 	text-indent: 0;
 }
 
-[epub|type~="z3998:song"] header p,
-[epub|type~="z3998:poem"] header p{
+[epub|type~="z3998:song"] header p{
 	text-align: center;
 }
 
@@ -87,10 +86,6 @@ td[epub|type~="z3998:persona"]{
 td{
 	vertical-align: top;
 	padding: .5em;
-}
-
-td p{
-	text-indent: 0;
 }
 
 section > header{
