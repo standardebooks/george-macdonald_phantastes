@@ -31,6 +31,7 @@ section[epub|type~="chapter"] header{
 }
 
 [epub|type~="z3998:song"] p > span,
+[epub|type~="z3998:verse"] p > span,
 [epub|type~="z3998:poem"] p > span{
 	display: block;
 	text-indent: -1em;
@@ -38,6 +39,7 @@ section[epub|type~="chapter"] header{
 }
 
 [epub|type~="z3998:song"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br,
 [epub|type~="z3998:poem"] p > span + br{
 	display: none;
 }
@@ -60,6 +62,15 @@ p span.i1{
 p span.i2{
 	text-indent: -1em;
 	padding-left: 3em;
+}
+
+span.elision{
+	margin: .5em;
+	margin-left: 3rem;
+}
+
+[epub|type~="epigraph"] span.elision{
+	font-style: normal;
 }
 
 .inscription p{
