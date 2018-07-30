@@ -24,6 +24,7 @@ section[epub|type~="halftitlepage"] span[epub|type~="subtitle"]{
 
 [epub|type~="z3998:song"] header p{
 	text-align: center;
+	margin: 2em;
 }
 
 [epub|type~="z3998:song"] p > span,
