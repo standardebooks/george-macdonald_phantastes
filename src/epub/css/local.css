@@ -127,6 +127,10 @@ section > header{
 	font-style: italic;
 }
 
+[epub|type~="se:short-story"]{
+	margin-top: 3em;
+}
+
 [epub|type~="z3998:drama"]{
 	border-collapse: collapse;
 }
