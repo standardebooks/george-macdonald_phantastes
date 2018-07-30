@@ -16,10 +16,6 @@ section[epub|type~="halftitlepage"] span[epub|type~="subtitle"]{
 	font-weight: normal;
 }
 
-section[epub|type~="chapter"] header{
-	margin-bottom: 1em;
-}
-
 [epub|type~="z3998:song"] p,
 [epub|type~="z3998:poem"] p{
 	text-align: left;
@@ -111,6 +107,10 @@ section > header{
 
 [epub|type~="epigraph"]{
 	margin-bottom: 0;
+}
+
+[epub|type~="epigraph"]:last-child{
+	margin-bottom: 3em;
 }
 
 [epub|type~="epigraph"] i{
