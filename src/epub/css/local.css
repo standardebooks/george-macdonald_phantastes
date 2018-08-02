@@ -1,15 +1,6 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
-abbr.name{
-	white-space: nowrap;
-}
-
-b{
-	font-weight: normal;
-	font-variant: all-small-caps;
-}
-
 section[epub|type~="halftitlepage"] span[epub|type~="subtitle"]{
 	display: block;
 	font-size: .75em;
@@ -22,9 +13,13 @@ section[epub|type~="halftitlepage"] span[epub|type~="subtitle"]{
 	text-indent: 0;
 }
 
+[epub|type~="z3998:song"] header{
+	margin-bottom: 1em;
+	margin-top: 3em;
+}
+
 [epub|type~="z3998:song"] header p{
 	text-align: center;
-	margin: 2em;
 }
 
 [epub|type~="z3998:song"] p > span,
@@ -81,37 +76,10 @@ span.elision{
 	vertical-align: middle;
 }
 
-section > header{
-	text-align: center;
-}
-
-[epub|type~="epigraph"] + [epub|type~="epigraph"]::before{
-	content: '';
-	display: block;
-	border: none;
-	border-top: 1px solid;
-	height: 0;
-	margin: 1.5em auto;
-	width: 25%;
-	text-align: center;
-}
-
+/* All epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
 	hyphens: none;
-	margin: 3em;
-	margin-top: 0;
-	text-align: left;
-	text-indent: 0;
-	display: inline-block;
-}
-
-[epub|type~="epigraph"]{
-	margin-bottom: 0;
-}
-
-[epub|type~="epigraph"]:last-child{
-	margin-bottom: 3em;
 }
 
 [epub|type~="epigraph"] i{
@@ -127,6 +95,26 @@ section > header{
 [epub|type~="epigraph"] cite i{
 	font-style: italic;
 }
+/* End all epigraphs */
+
+/* Epigraphs in section headers */
+section > header [epub|type~="epigraph"]{
+	display: inline-block;
+	margin: auto;
+	max-width: 80%;
+	text-align: left;
+}
+
+section > header [epub|type~="epigraph"] + *{
+	margin-top: 3em;
+}
+
+@supports(display: table){
+	section > header [epub|type~="epigraph"]{
+		display: table;
+	}
+}
+/* End epigraphs in section headers */
 
 [epub|type~="se:short-story"]{
 	margin-top: 3em;
