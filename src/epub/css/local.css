@@ -65,7 +65,7 @@ span.elision{
 	font-style: normal;
 }
 
-.inscription p{
+#chapter-14 > blockquote p{
 	font-variant: small-caps;
 	text-align: center;
 	text-indent: 0;
