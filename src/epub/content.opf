@@ -26,7 +26,7 @@
 		<meta property="schema:accessibilityFeature">tableOfContents</meta>
 		<meta property="schema:accessibilityHazard">none</meta>
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 Level AA.</meta>
-		<link href="onix.xml" rel="onix-record"/>
+		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
 		<dc:title id="title">Phantastes</dc:title>
 		<meta property="file-as" refines="#title">Phantastes</meta>
 		<meta property="title-type" refines="#title">main</meta>
@@ -37,10 +37,10 @@
 		<meta property="file-as" refines="#fulltitle">Phantastes</meta>
 		<meta property="title-type" refines="#fulltitle">extended</meta>
 		<dc:subject id="subject-1">Fantasy fiction</dc:subject>
-		<meta property="meta-auth" refines="#subject-1">https://www.gutenberg.org/ebooks/325</meta>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh85047114</meta>
 		<meta property="se:subject">Fantasy</meta>
 		<dc:description id="description">A young man awakes in Fairy Land, where he takes part in a series of strange adventures.</dc:description>
-		<meta property="meta-auth" refines="#description">https://standardebooks.org</meta>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;&lt;i&gt;Phantastes&lt;/i&gt; was published in 1858. It tells the story of Anodos, who, on coming of age, is examining the effects of his deceased father. To his astonishment, in doing so he sees an apparition of a fairy woman, who tells him that he has some fairy blood and conveys him to Fairy Land.&lt;/p&gt;
 			&lt;p&gt;In Fairy Land Anodos undergoes a long series of strange adventures and spiritual experiences. He is frequently under threat, at first from malevolent trees, and later from his own evil Shadow. At one point he discovers Pygmalion’s cave and sees the form of a beautiful woman enclosed in transparent alabaster. He falls instantly in love with this woman and contrives to free her from the stone, but she flees from him. Later, he encounters the Arthurian knight Sir Percivale, who has just come off the worst of an encounter with the evil Maid of the Alder-Tree. Eventually, after many trials and hazards, Anodos encounters Sir Percivale again and becomes his squire. Together they carry out deeds of chivalry before Anodos eventually returns to the mundane world.&lt;/p&gt;
