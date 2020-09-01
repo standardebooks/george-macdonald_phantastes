@@ -153,10 +153,6 @@ section > header [epub|type~="epigraph"] + *{
 	width: 20%;
 }
 
-[epub|type~="z3998:drama"] td p{
-	text-indent: 0;
-}
-
 [epub|type~="z3998:drama"] table{
 	margin: 1em auto;
 	width: 100%;
