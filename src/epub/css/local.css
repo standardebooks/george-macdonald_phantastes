@@ -3,7 +3,7 @@
 
 [epub|type~="z3998:song"] p,
 [epub|type~="z3998:poem"] p{
-	text-align: left;
+	text-align: initial;
 	text-indent: 0;
 }
 
@@ -92,7 +92,7 @@ section > header [epub|type~="epigraph"]{
 	display: inline-block;
 	margin: auto;
 	max-width: 80%;
-	text-align: left;
+	text-align: initial;
 }
 
 section > header [epub|type~="epigraph"] + *{
@@ -116,7 +116,7 @@ section[epub|type~="epigraph"] > *{
 	margin: auto;
 	margin-top: 3em;
 	max-width: 80%;
-	text-align: left;
+	text-align: initial;
 }
 
 @supports(display: flex){
