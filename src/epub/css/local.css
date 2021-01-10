@@ -1,5 +1,6 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
 
 [epub|type~="z3998:song"] p,
 [epub|type~="z3998:poem"] p{
@@ -50,6 +51,8 @@ span.elision{
 	margin-left: 3rem;
 }
 
+[xml|lang] em,
+[epub|type~="epigraph"] em,
 [epub|type~="epigraph"] span.elision{
 	font-style: normal;
 }
