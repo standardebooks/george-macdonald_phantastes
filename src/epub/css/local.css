@@ -180,3 +180,7 @@ section[epub|type~="epigraph"] > *{
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
 }
+
+[epub|type~="epigraph"] [epub|type~="z3998:persona"]{
+	font-style: normal;
+}
