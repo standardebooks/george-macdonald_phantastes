@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<se-lint-ignore>
-	<file path="epigraph-2.xhtml">
-		<ignore>
-			<code>t-029</code>
-			<reason>Capitalization may be correct in German.</reason>
-		</ignore>
-	</file>
-</se-lint-ignore>
