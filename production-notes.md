@@ -1,0 +1,1 @@
+Some archaic spellings, like “phantasy,” have been retained as part of the intended flavor of the text. Future producers should carefully review any proposed spelling modernizations to preserve the intended flavor.
